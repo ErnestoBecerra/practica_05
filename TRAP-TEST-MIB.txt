@@ -1,0 +1,9 @@
+TRAP-TEST-MIB DEFINITIONS ::= BEGIN
+IMPORTS ucdExperimental FROM UCD-SNMP-MIB;
+demotraps OBJECT IDENTIFIER ::= {ucdExperimental 990}
+demoTrap TRAP-TYPE
+ENTERPRISE demotraps
+VARIABLES {sysLocation}
+DESCRIPTION "An example of and SMIv1"
+::= 17
+END 
